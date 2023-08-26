@@ -30,6 +30,10 @@ class myClass{
     void display(){
         cout << "Value: " << value << endl;
     }
+    
+    ~myClass(){
+        cout << "Destructor called." << endl;
+    }
     private:
         int value;
 };
