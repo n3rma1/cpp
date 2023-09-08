@@ -8,4 +8,8 @@
 # Ignore the "build" directory
 /build/
 
+# Ignore vs code files
 .vscode
+
+# Ignore text files
+*.txt

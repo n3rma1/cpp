@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <bcrypt/BCrypt.hpp>
 
 using namespace std;
 
