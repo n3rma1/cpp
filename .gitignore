@@ -13,3 +13,5 @@
 
 # Ignore text files
 *.txt
+
+test.cpp
