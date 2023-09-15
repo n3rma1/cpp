@@ -1,7 +1,7 @@
 #include<iostream>
 #include <iomanip>
-using namespace std;
- 
+
+
 double deposit();
 void showBalance(double balance);
 double withdraw(double balance);
@@ -66,7 +66,7 @@ double deposit(){
     }
 }
 void showBalance(double balance){
-    std::cout << "Your balance is $" << std::setprecision(2) << std::fixed << balance << endl;
+    std::cout << "Your balance is $" << std::setprecision(2) << std::fixed << balance << std::endl;
 }
 double withdraw(double balance){
     double amount = 0;
