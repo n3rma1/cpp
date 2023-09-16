@@ -1,3 +1,9 @@
+// while opening a file, we can open file in more than one mode as
+// fstream mystream ("filedata", ios::in | ios::out);
+
+    // file opened in input or output mode
+
+
 #include <iostream>
 #include <fstream>
 using namespace std;
