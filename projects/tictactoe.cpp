@@ -37,6 +37,7 @@ int main(){
                 break;
         }
     }
+    std::cout << "THANKS FOR PLAYING!\n";
     return 0;
 }
 
