@@ -7,7 +7,7 @@ int main(){
     
     string line;
 
-    // by defualt ios::out mode, automatically deletes
+    // by default ios::out mode, automatically deletes
     // the content of file. To append the content,
     // open in ios::app mode
     // outputFile.open("sample.txt");

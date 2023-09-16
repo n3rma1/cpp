@@ -18,17 +18,17 @@ int main(){
     cout << "Enter the Name: ";
     cin >> name;
 
-    cout << "Enter fee : ";
     cin >> fee;
 
-    ofstream fout;
-    fout.open("2student.doc");
+    ofstream fout ("2student.doc");       // opens a file name 2student.doc for writting
+                                            // It creates 'fout' as the object of the class ofstream and 
+                                            // binds it to the file "2student.doc" for writting
 
     fout << rno <<"\t" << name << "\t" << fee;   // write data to the file student
     fout.close();
-
-    ifstream fin;
-    fin.open("2student.doc");
+    ifstream fin ("2student.doc");         // opens a file named '2student.doc' for input/reading.  
+                                        // It creates 'fin' as the object of the class ifstream that manages
+                                        // the input stream and binds it to the disk file '2student.doc' for input
     
     fin >> rno >> name >> fee;  //just like cin
 
