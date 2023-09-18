@@ -1,3 +1,8 @@
+// Purpose: Banking app to deposit, withdraw and show balance.
+
+
+
+
 #include<iostream>
 #include <iomanip>
 
