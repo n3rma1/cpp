@@ -10,7 +10,7 @@ private:
 public:
     void readData() {
         std::cout << "\nEnter name: ";
-        std::cin.ignore(); // Clear the newline character from the previous input
+        std::cin.ignore();               // Clear the newline character from the previous input
         std::getline(std::cin, name);
         std::cout << "Enter rollno: ";
         std::cin >> rollno;
