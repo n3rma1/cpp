@@ -1,4 +1,3 @@
-// an example of multipath inheritance
 
 #include<iostream>
  
@@ -94,3 +93,14 @@ int main()
     cout << "\nTotal Marks = " << r.TotalMarks();
     return 0;
 }
+
+
+/*
+    In this program student is a virtual base class, only one copy of the properties
+    are inhertited to the class RESULT even the proterties from student are inherited to
+    the RESUTL from two paths INTERNALEXAM and EXTERNALEXAM. When calling the member
+    GETDATA() through the object of class the RESULT the compiler does not warn 
+    about the ambiguity. But if we remove the keyword VIRTUAL  from the base class in the derived
+    class INTERNALEXAM and EXTERNALEXAM declaration, then the same statment r.get_std_data(); 
+    generates error becuase of duplicate set of getdata();
+*/
