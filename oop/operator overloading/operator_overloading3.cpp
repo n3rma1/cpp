@@ -5,7 +5,7 @@
 using namespace std;
  
 class Demo{
-    int x{};
+    int x;
 
     public:
         Demo(int a) : x(a){}

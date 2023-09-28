@@ -25,7 +25,7 @@ class Complex{
 int main(){
     Complex c1(2,3), c2(2,3),c3;
 
-    c3 = c1 + c2;       // c2 will pass as argument 
+    c3 = c1 + c2;       
 
     c3.display();
 }

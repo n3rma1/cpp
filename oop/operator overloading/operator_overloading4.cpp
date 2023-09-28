@@ -17,9 +17,9 @@ public:
 };
 
 void vector::operator-(){
-    i=-i;
-    j=-j;
-    k=-k;
+   --i;
+   --j;
+   --k;
 }
 void vector::display(){
     cout << i << " " << j << " " << k;
