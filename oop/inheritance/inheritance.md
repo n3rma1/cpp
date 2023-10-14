@@ -1,5 +1,6 @@
 # What is Inheritance?
-
+``It is "IS-A" relationship``
+<hr>
 Inheritance is a technique of building new classes from the existing classes. It is a
 technique of organizing information in a hierarchical form just like a child inheriting the features of its parents.
 

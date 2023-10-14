@@ -1,44 +1,45 @@
+// aggregation -> weak bonding between classes
 #include <iostream>
-#include <string>
-using namespace std;
+#include <vector>
 
-class Country{
-  string name;
-  int population;
+class Department {
+public:
+    Department(const std::string& name) : name(name) { }
 
-  public:
-  Country(string n, int p){
-    name = n;
-    population = p;
-  }
-  string getName(){
-    return name;
-  }
+    void printInfo() {
+        std::cout << "Department: " << name << std::endl;
+    }
+
+private:
+    std::string name;
 };
 
-class Person {
-  string name;
-  Country* country; // A pointer to a Country object
+class University {
+private:
+    std::vector<Department*> departments; // Aggregation
 
-  public: 
-  Person(string n, Country* c){
-    name = n;
-    country = c;
-  }
+public:
+    void addDepartment(Department* department) {
+        departments.push_back(department);
+    }
 
-  string printDetails(){
-    cout << "Name: " << name << endl;
-    cout << "Country: " << country->getName() << endl;
-  }
+    void printDepartments() {
+        for (Department* department : departments) {
+            department->printInfo();
+        }
+    }
 };
 
 int main() {
-  Country* country = new Country("Utopia", 1);
-  {
-    Person user("Darth Vader", country);
-    user.printDetails();
-  }
-  // The user object's lifetime is over
+    Department computerScience("Computer Science");
+    Department physics("Physics");
 
-  cout << country->getName() << endl; // The country object still exists!
+    University myUniversity;
+    myUniversity.addDepartment(&computerScience);
+    myUniversity.addDepartment(&physics);
+
+    myUniversity.printDepartments();
+
+    // Departments can exist independently and are not destroyed when the University is destroyed.
+    return 0;
 }

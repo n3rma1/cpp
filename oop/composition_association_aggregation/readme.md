@@ -1,6 +1,13 @@
 # Compostion, Aggregation and Association
-
+They have `HAS-A` relationship
+<hr>
 In object-oriented programming, composition, aggregation, and association are three different types of relationships between classes or objects. These relationships define how classes or objects are connected and interact with each other in a software system.
+
+```
+    Association has two forms:
+    1. aggregation
+    2. composition
+```
 
 1. Composition:
 
