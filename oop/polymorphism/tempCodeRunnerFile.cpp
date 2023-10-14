@@ -1,0 +1,1 @@
+ Shape * shape1 = new Shape();
