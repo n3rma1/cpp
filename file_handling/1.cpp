@@ -21,7 +21,7 @@ int main(){
     outputFile.open("sample.txt");
 
     while(outputFile){
-        getline(cin,line);
+        cin >> line;
 
         if(line == "-1")
             break;
@@ -39,9 +39,10 @@ int main(){
     // by defualt open mode = ios::in mode
     inputFile.open("sample.txt");
 
-    while(getline(inputFile,line)){
+    while(!inputFile.eof()){
 
         // print line (read from file) in console
+        inputFile >> line;
         cout << line << endl;
     }
 

@@ -38,7 +38,7 @@ int main()
   for (int i = 0; i < n; i++)
   {
     fin.read(reinterpret_cast<char *>(&temp), sizeof(Student));
-    s[i].display();
+    temp[i].display();
   }
   fin.close();
 
