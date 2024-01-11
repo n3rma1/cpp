@@ -43,7 +43,7 @@ int main() {
         cin >> a;
 
         switch (a) {
-            case 1:
+            case 1:// create
                 cout << "Enter filename: ";
                 cin >> filename;
                 fout.open(filename, ios::binary);
@@ -56,7 +56,7 @@ int main() {
                 }
                 break;
 
-            case 2:
+            case 2: // append
                 fout.open(filename, ios::app | ios::binary);
                 if (fout) {
                     s.get();
@@ -67,7 +67,7 @@ int main() {
                 }
                 break;
 
-            case 3:
+            case 3: //update
                 fout.open(filename, ios::binary | ios::in | ios::out);
                 if (fout) {
                     cout << "Enter object to be updated: ";
@@ -83,7 +83,7 @@ int main() {
                 }
                 break;
 
-            case 4:
+            case 4: //display
                 fin.open(filename, ios::binary);
                 if (fin) {
                     fin.seekg(0, ios::beg);
@@ -98,7 +98,7 @@ int main() {
                 }
                 break;
 
-            case 5:
+            case 5: //search
                 fin.open(filename, ios::binary);
                 if (fin) {
                     int r;
