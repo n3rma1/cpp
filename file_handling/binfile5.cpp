@@ -21,24 +21,24 @@ public:
 int main()
 {
 
-  Student s[10];
+  Student s;
   ofstream fout("student.dat", ios::binary);
   cout << "Enter no. of students: ";
   int n;
   cin >> n;
   for (int i = 0; i < n; i++)
   {
-    s[i].getdata();
+    s.getdata();
     fout.write(reinterpret_cast<char *>(&s), sizeof(Student));
   }
   fout.close();
 
   ifstream fin("student.dat", ios::binary);
-  Student temp[10];
+  Student temp;
   for (int i = 0; i < n; i++)
   {
     fin.read(reinterpret_cast<char *>(&temp), sizeof(Student));
-    temp[i].display();
+    temp.display();
   }
   fin.close();
 
